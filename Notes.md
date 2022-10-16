@@ -11,6 +11,17 @@
     - Stream ARC (BCM70012?)
     - Video Decoder Outer Loop ARC (BCM70010)
     - Video Decoder Inner Loop ARC (BCM70010)
+  - Firmware is verified with an [HMAC-SHA256][hmac] signature.
+    - Verification can be bypassed via the following method:
+      1. Follow the normal startup procedure, but stop before uploading any
+         firmware.
+      2. Upload the signed firmware the normal way (the one that simultaneously
+         loads it into DRAM and verifies the signature), but do not start the
+         firmware.
+      3. Use direct DRAM writes to overwrite the previously-uploaded signed
+         firmware with your unsigned firmware.
+      4. Release the CPU from reset.
+    - It may be possible to extract the HMAC key using a side-channel attack.
 - BCM70015
   - Three cores (one ARM, two ARC):
     - System Management ARM
@@ -18,6 +29,8 @@
     - Video Decoder Inner Loop ARC
   - ARC firmware is stored as ELF files within the ARM firmware.
   - ARC UART is [this][arc_uart].
+  - Firmware is verified with an [AES-CMAC][cmac] signature.
+    - It may be possible to extract the AES key using a side-channel attack.
 - ARC cores
   - Little-endian ARC6 (pre-ARC600).
   - An ISA manual for this architecture can be downloaded [here][isa-manual].
@@ -39,7 +52,9 @@
 - [Out-of-tree kernel module, userspace library, and firmware][driver]
 
 
+[hmac]: https://en.wikipedia.org/wiki/HMAC
 [arc_uart]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c
+[cmac]: https://datatracker.ietf.org/doc/html/rfc4493
 [isa-manual]: https://web.archive.org/web/20160618094913if_/http://me.bios.io/images/c/c6/ARC4._Programmers_reference.pdf
 [binutils]: https://www.gnu.org/software/binutils/
 [toolchain]: https://www.maintech.de/support/toolchains/

@@ -18,9 +18,19 @@
     - Video Decoder Inner Loop ARC
   - ARC firmware is stored as ELF files within the ARM firmware.
   - ARC UART is [this][arc_uart].
-
-- ARC cores:
+- ARC cores
   - Little-endian ARC6 (pre-ARC600).
+  - An ISA manual for this architecture can be downloaded [here][isa-manual].
+  - Version 2.25.1 of [GNU binutils][binutils] is the last version to support
+    this architecture.
+    - Configure with `./configure --target=arc-elf32`.
+    - Assemble code with `arc-elf32-as -marc6`.
+  - The last version of GCC to support this architecture is version 4.5.4, but
+    the code has bitrotted significantly and can't be built on modern systems
+    as-is.
+  - A complete toolchain precompiled for x86 can be downloaded
+    [here][toolchain], but it uses extremely old versions of GCC and binutils
+    (GCC 3.4.5 and binutils 2.15).
 
 
 ## More info
@@ -30,5 +40,8 @@
 
 
 [arc_uart]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c
+[isa-manual]: https://web.archive.org/web/20160618094913if_/http://me.bios.io/images/c/c6/ARC4._Programmers_reference.pdf
+[binutils]: https://www.gnu.org/software/binutils/
+[toolchain]: https://www.maintech.de/support/toolchains/
 [wikipedia]: https://en.wikipedia.org/wiki/Broadcom_Crystal_HD
 [driver]: https://github.com/yeradis/crystalhd

@@ -26,8 +26,8 @@
     - Configure with `./configure --target=arc-elf32`.
     - Assemble code with `arc-elf32-as -marc6`.
   - The last version of GCC to support this architecture is version 4.5.4, but
-    the code has bitrotted significantly and can't be built on modern systems
-    as-is.
+    the code has bitrotted significantly and can't be built as-is on modern
+    systems.
   - A complete toolchain precompiled for x86 can be downloaded
     [here][toolchain], but it uses extremely old versions of GCC and binutils
     (GCC 3.4.5 and binutils 2.15).

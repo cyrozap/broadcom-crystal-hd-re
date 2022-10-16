@@ -1,3 +1,8 @@
+# Reverse engineering notes
+
+
+## General notes
+
 - BCM70012/BCM70010
   - BCM70012 is some kind of bridge IC.
   - BCM70010 is the video decoder IC.
@@ -12,7 +17,18 @@
     - Video Decoder Outer Loop ARC
     - Video Decoder Inner Loop ARC
   - ARC firmware is stored as ELF files within the ARM firmware.
-  - ARC UART is [this](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c).
+  - ARC UART is [this][arc_uart].
 
 - ARC cores:
   - Little-endian ARC6 (pre-ARC600).
+
+
+## More info
+
+- [Wikipedia][wikipedia]
+- [Out-of-tree kernel module, userspace library, and firmware][driver]
+
+
+[arc_uart]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c
+[wikipedia]: https://en.wikipedia.org/wiki/Broadcom_Crystal_HD
+[driver]: https://github.com/yeradis/crystalhd

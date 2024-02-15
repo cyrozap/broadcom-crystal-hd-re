@@ -7,6 +7,8 @@
   - BCM70012 is some kind of bridge IC.
   - [BCM70010][bcm70010] is the video decoder IC.
     - Possibly a die-shrunk [BCM7411][bcm7411]/[BCM7412][bcm7412].
+    - The block diagram of the BCM70010 matches that of the BCM7412 almost
+      exactly.
   - Three ARC cores:
     - Stream ARC (BCM70012?)
     - Video Decoder Outer Loop ARC (BCM70010)

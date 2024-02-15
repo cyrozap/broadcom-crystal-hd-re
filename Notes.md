@@ -3,10 +3,10 @@
 
 ## General notes
 
-- BCM70012/BCM70010
+- [BCM70012/BCM70010][bcm70010/bcm70012]
   - BCM70012 is some kind of bridge IC.
-  - BCM70010 is the video decoder IC.
-    - Possibly a die-shrunk BCM7411/BCM7412.
+  - [BCM70010][bcm70010] is the video decoder IC.
+    - Possibly a die-shrunk [BCM7411][bcm7411]/[BCM7412][bcm7412].
   - Three ARC cores:
     - Stream ARC (BCM70012?)
     - Video Decoder Outer Loop ARC (BCM70010)
@@ -22,7 +22,7 @@
          firmware with your unsigned firmware.
       4. Release the CPU from reset.
     - It may be possible to extract the HMAC key using a side-channel attack.
-- BCM70015
+- [BCM70015][bcm70015]
   - Three cores (one ARM, two ARC):
     - System Management ARM
     - Video Decoder Outer Loop ARC
@@ -50,8 +50,16 @@
 
 - [Wikipedia][wikipedia]
 - [Out-of-tree kernel module, userspace library, and firmware][driver]
+- [BCM70010 Product Brief][bcm70010]
+- [BCM70010/BCM70012 Product Brief][bcm70010/bcm70012]
+- [BCM70015 Product Brief][bcm70015]
 
 
+[bcm70010/bcm70012]: https://web.archive.org/web/20240214223754if_/https://static6.arrow.com/aropdfconversion/ea0893d8b88c1224d0b011f1bcc23123748ead6d/70010_70012-pb01-r.pdf
+[bcm70010]: https://web.archive.org/web/20240214225008if_/https://static6.arrow.com/aropdfconversion/17e2c4acba947affa1d89c6d7214304b1c852a8d/70010-pb01-r.pdf
+[bcm70015]: https://web.archive.org/web/20240214232928if_/https://acerfans.ru/uploads/forum/files/1456776117_bcm70015.pdf
+[bcm7411]: https://web.archive.org/web/20240214230116if_/https://www.digchip.com/datasheets/download_datasheet.php?id=2522781&part-number=BCM7411
+[bcm7412]: https://web.archive.org/web/20240214230054if_/https://www.digchip.com/datasheets/download_datasheet.php?id=3187850&part-number=BCM7412
 [hmac]: https://en.wikipedia.org/wiki/HMAC
 [arc_uart]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c
 [cmac]: https://datatracker.ietf.org/doc/html/rfc4493

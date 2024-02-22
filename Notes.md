@@ -60,6 +60,9 @@
   - [BCM70010][bcm70010-web]
   - [BCM70012][bcm70012-web]
   - [BCM70015][bcm70015-web]
+- Press releases:
+  - [BCM70010/BCM70012][bcm70010/bcm70012-pr]
+  - [BCM70015][bcm70015-pr]
 - Schematics for laptops that have an onboard BCM70015:
   - [HP Mini 210-2003er / 110-3601er / 010153H00-600-G][010153h00-600-g]
   - [Samsung N220 / N210 / N150 / NB30][samsung]
@@ -81,5 +84,7 @@
 [bcm70010-web]: https://web.archive.org/web/20090710081221/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70010
 [bcm70012-web]: https://web.archive.org/web/20090708055912/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70012
 [bcm70015-web]: https://web.archive.org/web/20091226234150/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70015
+[bcm70010/bcm70012-pr]: https://web.archive.org/web/20070614014131/http://www.broadcom.com/press/release.php?id=1010620
+[bcm70015-pr]: https://web.archive.org/web/20091228045547/http://www.broadcom.com/press/release.php?id=s431589
 [010153h00-600-g]: https://web.archive.org/web/20210726063354if_/https://www.abcelectronique.com/forum/attachment.php?attachmentid=48741#page=26
 [samsung]: https://web.archive.org/web/20210726062516if_/https://www.informaticanapoli.it/download/SCHEMIELETTRICI/SAMSUNG/np-n220_n210_n150_nb30_bloomington_rev_0.9_sch.pdf#page=20

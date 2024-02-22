@@ -81,8 +81,8 @@
 [toolchain]: https://www.maintech.de/support/toolchains/
 [wikipedia]: https://en.wikipedia.org/wiki/Broadcom_Crystal_HD
 [driver]: https://github.com/yeradis/crystalhd
-[bcm70010-web]: https://web.archive.org/web/20090710081221/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70010
-[bcm70012-web]: https://web.archive.org/web/20090708055912/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70012
+[bcm70010-web]: https://web.archive.org/web/20070606095145/http://www.broadcom.com/products/Consumer-Electronics/Media-PC-Solutions/BCM70010
+[bcm70012-web]: https://web.archive.org/web/20071027080309/http://www.broadcom.com/products/Consumer-Electronics/Media-PC-Solutions/BCM70012
 [bcm70015-web]: https://web.archive.org/web/20091226234150/http://www.broadcom.com/products/Consumer-Electronics/Netbook-and-Nettop-Solutions/BCM70015
 [bcm70010/bcm70012-pr]: https://web.archive.org/web/20070614014131/http://www.broadcom.com/press/release.php?id=1010620
 [bcm70015-pr]: https://web.archive.org/web/20091228045547/http://www.broadcom.com/press/release.php?id=s431589

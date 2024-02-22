@@ -55,6 +55,9 @@
 - [BCM70010 Product Brief][bcm70010]
 - [BCM70010/BCM70012 Product Brief][bcm70010/bcm70012]
 - [BCM70015 Product Brief][bcm70015]
+- Schematics for laptops that have an onboard BCM70015:
+  - [HP Mini 210-2003er / 110-3601er / 010153H00-600-G][010153h00-600-g]
+  - [Samsung N220 / N210 / N150 / NB30][samsung]
 
 
 [bcm70010/bcm70012]: https://web.archive.org/web/20240214223754if_/https://static6.arrow.com/aropdfconversion/ea0893d8b88c1224d0b011f1bcc23123748ead6d/70010_70012-pb01-r.pdf
@@ -70,3 +73,5 @@
 [toolchain]: https://www.maintech.de/support/toolchains/
 [wikipedia]: https://en.wikipedia.org/wiki/Broadcom_Crystal_HD
 [driver]: https://github.com/yeradis/crystalhd
+[010153h00-600-g]: https://web.archive.org/web/20210726063354if_/https://www.abcelectronique.com/forum/attachment.php?attachmentid=48741#page=26
+[samsung]: https://web.archive.org/web/20210726062516if_/https://www.informaticanapoli.it/download/SCHEMIELETTRICI/SAMSUNG/np-n220_n210_n150_nb30_bloomington_rev_0.9_sch.pdf#page=20

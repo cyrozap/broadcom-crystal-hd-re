@@ -69,7 +69,7 @@
 
 
 [bcm70010/bcm70012]: https://web.archive.org/web/20240222071805if_/https://download.datasheets.com/pdfs/2007/12/26/isys/brc/70010_70012-pb01-r.pdf
-[bcm70010]: https://web.archive.org/web/20240214225008if_/https://static6.arrow.com/aropdfconversion/17e2c4acba947affa1d89c6d7214304b1c852a8d/70010-pb01-r.pdf
+[bcm70010]: https://web.archive.org/web/20240222072019if_/https://download.datasheets.com/pdfs/2008/08/30/semi_ap/manual/brc/consumer-electronics/70010-pb01-r.pdf
 [bcm70015]: https://web.archive.org/web/20240214232928if_/https://acerfans.ru/uploads/forum/files/1456776117_bcm70015.pdf
 [bcm7411]: https://web.archive.org/web/20240222065458if_/http://datasheet.elcodis.com/pdf2/108/60/1086002/bcm7411.pdf
 [bcm7412]: https://web.archive.org/web/20240214230054if_/https://www.digchip.com/datasheets/download_datasheet.php?id=3187850&part-number=BCM7412

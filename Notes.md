@@ -71,7 +71,7 @@
 [bcm70010/bcm70012]: https://web.archive.org/web/20240214223754if_/https://static6.arrow.com/aropdfconversion/ea0893d8b88c1224d0b011f1bcc23123748ead6d/70010_70012-pb01-r.pdf
 [bcm70010]: https://web.archive.org/web/20240214225008if_/https://static6.arrow.com/aropdfconversion/17e2c4acba947affa1d89c6d7214304b1c852a8d/70010-pb01-r.pdf
 [bcm70015]: https://web.archive.org/web/20240214232928if_/https://acerfans.ru/uploads/forum/files/1456776117_bcm70015.pdf
-[bcm7411]: https://web.archive.org/web/20060111091139if_/http://www.broadcom.com/collateral/pb/7411-PB05-R.pdf
+[bcm7411]: https://web.archive.org/web/20240222065458if_/http://datasheet.elcodis.com/pdf2/108/60/1086002/bcm7411.pdf
 [bcm7412]: https://web.archive.org/web/20240214230054if_/https://www.digchip.com/datasheets/download_datasheet.php?id=3187850&part-number=BCM7412
 [hmac]: https://en.wikipedia.org/wiki/HMAC
 [arc_uart]: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/tty/serial/arc_uart.c

@@ -26,7 +26,7 @@
     - It may be possible to extract the HMAC key using a side-channel attack.
 - [BCM70015][bcm70015]
   - Three cores (one ARM, two ARC):
-    - System Management ARM
+    - System Management ARM Cortex-R4
     - Video Decoder Outer Loop ARC
     - Video Decoder Inner Loop ARC
   - ARC firmware is stored as ELF files within the ARM firmware.

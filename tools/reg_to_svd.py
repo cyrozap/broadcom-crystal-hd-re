@@ -269,7 +269,7 @@ def build_device_tree(
         peripheral: Peripheral = Peripheral(periph_name, base_address, f"{periph_name} Peripheral")
         device.add_peripheral(peripheral)
 
-        for reg_info in sorted(regs, key=lambda r: r.addr):
+        for reg_info in regs:
             register: Register = Register(reg_info.reg_name, reg_info.desc, reg_info.addr - base_address)
             peripheral.add_register(register)
 
@@ -339,14 +339,14 @@ def generate_svd(device: Device) -> str:
 
     peripherals_elem: Element = SubElement(dev_elem, "peripherals")
 
-    for periph_name, peripheral in sorted(device.peripherals.items()):
+    for periph_name, peripheral in device.peripherals.items():
         periph_elem: Element = SubElement(peripherals_elem, "peripheral")
         SubElement(periph_elem, "name").text = peripheral.name
         SubElement(periph_elem, "description").text = peripheral.description
         SubElement(periph_elem, "baseAddress").text = f"0x{peripheral.base_address:08X}"
 
         registers_elem: Element = SubElement(periph_elem, "registers")
-        for reg_name, register in sorted(peripheral.registers.items()):
+        for reg_name, register in peripheral.registers.items():
             reg_elem: Element = SubElement(registers_elem, "register")
             SubElement(reg_elem, "name").text = register.name
             SubElement(reg_elem, "description").text = register.description

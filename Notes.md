@@ -9,6 +9,8 @@
     - Possibly a die-shrink of [BCM7411][bcm7411]/[BCM7412][bcm7412].
     - The block diagram of the BCM70010 matches that of the BCM7412 almost
       exactly.
+    - The BCM7411 and BCM7412 are mentioned in the driver source code, and the
+      BCM70010 is sometimes referred to as "7412".
   - Three ARC cores:
     - Stream ARC (BCM70012?)
     - Video Decoder Outer Loop ARC (BCM70010)

@@ -11,10 +11,10 @@
       exactly.
     - The BCM7411 and BCM7412 are mentioned in the driver source code, and the
       BCM70010 is sometimes referred to as "7412".
-  - Three ARC cores:
-    - Stream ARC (BCM70012?)
-    - Video Decoder Outer Loop ARC (BCM70010)
-    - Video Decoder Inner Loop ARC (BCM70010)
+  - Three ARC cores in the BCM70010:
+    - Stream ARC
+    - Video Decoder Outer Loop ARC
+    - Video Decoder Inner Loop ARC
   - Firmware is verified with an [HMAC-SHA256][hmac] signature.
     - Verification can be bypassed via the following method:
       1. Follow the normal startup procedure, but stop before uploading any

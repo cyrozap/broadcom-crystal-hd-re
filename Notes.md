@@ -4,17 +4,34 @@
 ## General notes
 
 - [BCM70012/BCM70010][bcm70010/bcm70012]
-  - BCM70012 is some kind of bridge IC.
+  - BCM70012 is a PCIe to GISB bridge.
+    - GISB is a proprietary Broadcom bus.
+    - Contains:
+      - DMA controller
+      - Power and reset control of BCM70010
+      - "DCI" for loading firmware into BCM70010 and verifying its signature
+      - OTP memory for storing 16-byte AES key encryption key and 32-byte
+        HMAC-SHA256 firmware verification key
+      - AES peripheral
+        - Used for writing/reading encrypted keys to/from EEPROM
+        - Uses a key encryption key (KEK) from OTP memory for encrypt/decrypt
+          operations
+        - Loads decrypted keys into BCM70010 over GISB
   - [BCM70010][bcm70010] is the video decoder IC.
     - Possibly a die-shrink of [BCM7411][bcm7411]/[BCM7412][bcm7412].
-    - The block diagram of the BCM70010 matches that of the BCM7412 almost
-      exactly.
-    - The BCM7411 and BCM7412 are mentioned in the driver source code, and the
-      BCM70010 is sometimes referred to as "7412".
-  - Three ARC cores in the BCM70010:
-    - Stream ARC
-    - Video Decoder Outer Loop ARC
-    - Video Decoder Inner Loop ARC
+      - The block diagram of the BCM70010 matches that of the BCM7412 almost
+        exactly.
+      - The BCM7411 and BCM7412 are mentioned in the driver source code, and the
+        BCM70010 is sometimes referred to as "7412".
+    - Contains:
+      - Three ARC cores:
+        - Stream ARC
+        - Video Decoder Outer Loop ARC
+        - Video Decoder Inner Loop ARC
+      - SDRAM controller
+      - DMA controller
+      - Audio DSP
+      - Hardware video decoders
   - Firmware is verified with an [HMAC-SHA256][hmac] signature.
     - Verification can be bypassed via the following method:
       1. Follow the normal startup procedure, but stop before uploading any

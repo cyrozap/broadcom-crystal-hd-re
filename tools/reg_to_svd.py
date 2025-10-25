@@ -329,7 +329,11 @@ def generate_svd(device: Device) -> str:
         A string containing the SVD XML content.
     """
 
-    dev_elem: Element = Element('device', schemaVersion="1.3", xmlns_xs="http://www.w3.org/2001/XMLSchema-instance", xs_noNamespaceSchemaLocation="CMSIS-SVD.xsd")
+    dev_elem: Element = Element('device', {
+        "schemaVersion": "1.3",
+        "xmlns:xs": "http://www.w3.org/2001/XMLSchema-instance",
+        "xs:noNamespaceSchemaLocation": "CMSIS-SVD.xsd",
+    })
 
     SubElement(dev_elem, "name").text = device.name
     SubElement(dev_elem, "version").text = "1.0"

@@ -368,9 +368,9 @@ def generate_svd(device: Device) -> str:
                     SubElement(field_elem, "bitWidth").text = str(field.bit_width)
 
     # Pretty print
-    rough_string: bytes = tostring(dev_elem, 'utf-8')
+    rough_string: bytes = tostring(dev_elem, encoding="utf-8", xml_declaration=True)
     reparsed: minidom.Document = minidom.parseString(rough_string)
-    return reparsed.toprettyxml(indent="  ")
+    return reparsed.toprettyxml(indent="  ", encoding="utf-8").decode("utf-8")
 
 def main() -> None:
     """Main entry point for the script."""
